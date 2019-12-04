@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Chrome Extension Quick Start",
+    "version": "0.0.1",
+    "background": {
+        "scripts": [
+            "js/vue.min.js",
+            "js/background.js"
+        ],
+        "persistent": false
+    },
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';"
+}
